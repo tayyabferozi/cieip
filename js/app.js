@@ -108,14 +108,3 @@ function getPageList(totalPages, page, maxLength) {
     range(totalPages - sideWidth + 1, totalPages)
   );
 }
-
-const toggleOverlay = () => {
-  $(".navigation ul").toggleClass("active");
-  $(".dark-overlay").toggleClass("active");
-};
-
-$(".burger").click(toggleOverlay);
-
-$(".navigation .close").click(toggleOverlay);
-
-$(".dark-overlay").click(toggleOverlay);

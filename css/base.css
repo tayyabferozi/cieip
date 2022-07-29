@@ -35,9 +35,16 @@ body {
 
 .navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   /* position: relative; */
   align-items: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1250px) {
+  .navigation {
+    justify-content: space-between;
+  }
 }
 
 .navigation a img {
@@ -2076,7 +2083,7 @@ footer .bottom-details .bottom_text {
 
 #message {
   width: calc(100% - 15px);
-  max-width: 1094px;
+  /* max-width: 1094px; */
   height: 150px;
   border: 1px solid #d2d6da;
   border-radius: 8px;
